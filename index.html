@@ -1,11 +1,151 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laba 1 VR</title>
+  <meta charset="UTF-8">
+  <title>Лабораторна робота 1</title>
 </head>
 <body>
-    
+
+  <table width="100%" border="0" cellspacing="0" cellpadding="15">
+
+    <tr>
+      <td colspan="2" align="center" bgcolor="#f0f0f0">
+        
+        <h1>Мій навчальний сайт</h1>
+        <p>Зображення-банер, що веде на офіційний сайт (приклад):</p>
+        <a href="https://example-university.com/" target="_blank">
+          <img 
+            src="https://via.placeholder.com/900x150.png?text=Банер+Університету" 
+            alt="Зображення-банер, що веде на офіційний сайт університету" 
+            width="900" 
+            height="150"
+          >
+        </a>
+
+      </td>
+    </tr>
+
+    <tr>
+      
+      <td width="30%" valign="top" bgcolor="#f9f9f9">
+        
+        <h2>Форма реєстрації</h2>
+        <form action="#" method="get">
+          <div>
+            <label for="user_login">Ваш логін:</label><br>
+            <input type="text" id="user_login" name="login" size="25">
+          </div>
+          <br>
+          <div>
+            <label for="user_email">Ваш Email:</label><br>
+            <input type="email" id="user_email" name="email" size="25">
+          </div>
+          <br>
+          <div>
+            <label for="user_pass">Пароль:</label><br>
+            <input type="password" id="user_pass" name="password" size="25">
+          </div>
+          <br>
+          <div>
+            <input type="submit" value="Зареєструватися">
+            <input type="reset" value="Очистити форму">
+          </div>
+        </form>
+
+        <hr>
+
+        <h2>Опитування</h2>
+        <p>Дворівневий список з питанням та варіантами відповідей:</p>
+        <ol>
+          <li>
+            Яка тема вас найбільше цікавить?
+            <ul>
+              <li>Архітектура комп'ютерів</li>
+              <li>Веб-програмування</li>
+              <li>Бази даних</li>
+            </ul>
+          </li>
+          <li>
+            Чи плануєте ви відвідати лекцію?
+            <ul>
+              <li>Так</li>
+              <li>Ні</li>
+            </ul>
+          </li>
+        </ol>
+
+      </td>
+
+      <td width="70%" valign="top">
+        
+        <h2>Оформлений текст (за варіантом)</h2>
+        <p>
+          Тут використовуються теги для <strong>напівжирного</strong>, 
+          <em>курсивного</em>, 
+          <sup>надрядкового</sup> та 
+          <sub>підрядкового</sub> креслення, 
+          а також &amp;-сутності, як-от &lt; (менше), &gt; (більше) та грецькі літери.
+        </p>
+        
+        <p>
+          <strong>Основна тригонометрична тотожність:</strong>
+          cot<sup>2</sup>&alpha; &ndash; sin<sup>2</sup>&alpha; = 1
+        </p>
+        <p>
+          <em>Приклад суворої нерівності:</em> &alpha; &lt; &beta;.
+        </p>
+        <p>
+          <em>Нестрога нерівність</em> &alpha; &le; &beta;, означає, що 
+          або &alpha; &lt; &beta;, або &alpha; = &beta;.
+        </p>
+        
+        <hr>
+
+        <h2>Таблиця успішності</h2>
+        <p>Таблиця з даними про успішність 3-х студентів з деяких дисциплін 3-го курсу.</p>
+
+        <table width="100%" border="1" cellspacing="0" cellpadding="5">
+          <thead>
+            <tr bgcolor="#f0f0f0">
+              <th>ПІБ Студента</th>
+              <th>Дисципліна 1</th>
+              <th>Дисципліна 2</th>
+              <th>Дисципліна 3</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Петренко П.С.</td>
+              <td>95</td>
+              <td>88</td>
+              <td>91</td>
+            </tr>
+            <tr>
+              <td>Іваненко І.І.</td>
+              <td>82</td>
+              <td>77</td>
+              <td>85</td>
+            </tr>
+            <tr>
+              <td>Сидоренко С.А.</td>
+              <td>90</td>
+              <td>92</td>
+              <td>89</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" align="center" bgcolor="#f0f0f0">
+        <hr>
+        <p>&copy; 2025. Всі права захищено (або ні).</p>
+      </td>
+    </tr>
+
+  </table>
+
 </body>
 </html>
