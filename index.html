@@ -28,34 +28,29 @@
         
         <hr>
 
-        <h2>Пошук:</h2>
+<h2>Форма голосування</h2>
+        <p>Який факультет ви вважаєте найкращим?</p>
         <form action="#" method="get">
           <div>
-            <label for="search_query">Запит:</label><br>
-            <input type="text" id="search_query" name="q" size="25">
+            <input type="radio" id="vote_kiu" name="faculty_vote" value="kiu">
+            <label for="vote_kiu">Факультет КІУ</label><br>
+            
+            <input type="radio" id="vote_kn" name="faculty_vote" value="kn">
+            <label for="vote_kn">Факультет КН</label><br>
+            
+            <input type="radio" id="vote_akt" name="faculty_vote" value="akt">
+            <label for="vote_akt">Факультет АКТ</label><br>
           </div>
           <br>
           <div>
-            <label>Нововедення:</label><br>
-            <input type="checkbox" id="cat_news" name="cat" value="news">
-            <label for="cat_news">Новини</label><br>
-            
-            <input type="checkbox" id="cat_articles" name="cat" value="articles">
-            <label for="cat_articles">Положення</label><br>
-            
-            <input type="checkbox" id="cat_docs" name="cat" value="docs">
-            <label for="cat_docs">Документи</label>
-          </div>
-          <br>
-          <div>
-            <input type="submit" value="Знайти">
-            <input type="reset" value="Скинути">
+            <input type="submit" value="Проголосувати">
           </div>
         </form>
 
       </td>
 
-      <td width="70%" valign="top" bgcolor="#f4f4f4">
+            <td width="100%" valign="top" bgcolor="#f4f4f4">
+
         
         <h2 id="theorem">Теорема:</h2>
         <p>
