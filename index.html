@@ -1,123 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laba 1 VR</title>
+  <meta charset="UTF-8">
+  <title>Laba 1 VR</title>
 </head>
 <body>
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td colspan="2" align="center" bgcolor="#ffffff">
-          <h1>Предсторінка сайту ХНУРЕ</h1>
-          <a href="https://nure.ua/" target="_blank">
-            <img 
-              src="images/banneofuniversity.png" 
-              alt="Banner" 
-              width="80%" 
-              height="600"
-            />
-          </a>
-        </td>
-      </tr>
-    </table> 
 
-    <table width="100%" border="0" cellspacing="0" cellpadding="0">
-      <tr>
-        <td width="100%" bgcolor="#f0f0f0" valign="left" style="padding: 30px;">
-          
-          <h2>Опитування студентів</h2>
-          <ol>
-            <li>
-              Чи подобається вам сайт?
-              <ul>
-                <li>Так</li>
-                <li>Точно так</li>
-                <li>Ні не приймається</li>
-              </ul>
-            </li>
-            <li>
-              Які інструменти потрібно використовувати для його поліпшення?
-              <ul>
-                <li>CSS</li>
-                <li>MongoDB</li>
-                <li>C++</li>
-              </ul>
-            </li>
-          </ol>
-          
-          <h2>Основна тригонометрична тотожність:</h2>
-          <p>
-            <strong>Основна тригонометрична тотожність:</strong>
-            cos<sup>2</sup>&alpha; &#43; sin<sup>2</sup>&alpha; = 1
-          </p>
-          <p>
-            <em>Приклад суворої нерівності:</em> &alpha; &lt; &beta;.
-          </p>
-          <p>
-            <em>Нестрога нерівність</em> &alpha; &le; &beta;, означає, що 
-            або &alpha; &lt; &beta;, або &alpha; = &beta;.
-          </p>
+  <table width="100%" border="0" cellspacing="0" cellpadding="30">
 
-          <hr>
+    <tr>
+      <td colspan="2" align="center" bgcolor="#ffffff">
+        <h1>Інформація про університет</h1>
+      </td>
+    </tr>
 
-          <h2>Форма для заповнення</h2>
-          <form action="submit_form.php" method="post">
-            <label for="name">Name:</label><br>
-            <input type="text" id="name" name="name" required><br><br>
+    <tr>
+      
+      <td width="30%" valign="top" bgcolor="#f4f4f4">
+        
+        <h2>Швидкий пошук</h2>
+        <p>Посилання:</p>
+        <ul>
+          <li><a href="#theorem">Теореми</a></li>
+          <li><a href="#university">Курси валют</a></li>
+          <li><a href="#currency">Структура університету</a></li>
+        </ul>
+        
+        <hr>
+
+        <h2>Пошук:</h2>
+        <form action="#" method="get">
+          <div>
+            <label for="search_query">Запит:</label><br>
+            <input type="text" id="search_query" name="q" size="25">
+          </div>
+          <br>
+          <div>
+            <label>Нововедення:</label><br>
+            <input type="checkbox" id="cat_news" name="cat" value="news">
+            <label for="cat_news">Новини</label><br>
             
-            <label for="email">Email:</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+            <input type="checkbox" id="cat_articles" name="cat" value="articles">
+            <label for="cat_articles">Положення</label><br>
             
-            <input type="submit" value="Submit">
-            <input type="reset" value="Reset">
-          </form>
+            <input type="checkbox" id="cat_docs" name="cat" value="docs">
+            <label for="cat_docs">Документи</label>
+          </div>
+          <br>
+          <div>
+            <input type="submit" value="Знайти">
+            <input type="reset" value="Скинути">
+          </div>
+        </form>
 
-          <hr>
+      </td>
 
-          <h2>Таблиця успішності</h2>
-          <p>Таблиця з даними про студентів 3-го курсу</p>
+      <td width="70%" valign="top" bgcolor="#f4f4f4">
+        
+        <h2 id="theorem">Теорема:</h2>
+        <p>
+          <strong>Для будь-якого натурального числа</strong> <i>n</i> &gt; 2 
+          <strong>рівняння</strong> <i>a</i><sup>n</sup> + <i>b</i><sup>n</sup> = <i>c</i><sup>n</sup> 
+          <strong>не має рішень при цілих ненульових числах</strong> <i>a, b, c</i>.
+        </p>
+        
+        <hr>
 
-          <table width="100%" border="1" cellspacing="0" cellpadding="5">
-            <thead>
-              <tr bgcolor="#f0f0f0">
-                <th>ПІБ Студента 3-о курсу</th>
-                <th>Веб-розробка</th>
-                <th>ОПТФОС</th>
-                <th>СКБД</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Іващенко Г.С.</td>
-                <td>95</td>
-                <td>88</td>
-                <td>91</td>
-              </tr>
-              <tr>
-                <td>Бирька Е.М.</td>
-                <td>85</td>
-                <td>90</td>
-                <td>82</td>
-              </tr>
-              <tr>
-                <td>Татиржа А.А.</td>
-                <td>60</td>
-                <td>95</td>
-                <td>88</td>
-              </tr>
-              <tr>
-                <td>Сасавот Г.Б.</td>
-                <td>79</td>
-                <td>81</td>
-                <td>55</td>
-              </tr>
-            </tbody>
-          </table>
+        <h2 id="university">Багаторівневий список (Структура Університету)</h2>
+        <p>Поділ на факультети та кафедри:</p>
+        <ul>
+          <li>
+            Факультет КІУ
+            <ul>
+              <li>Кафедра Електронних обчислювальних машин</li>
+              <li>Кафедра Автоматизації проектування обчислювальної техніки</li>
+              <li>Кафедра Безпеки інформаційних технологій</li>
+            </ul>
+          </li>
+          <li>
+            Факультет КН
+            <ul>
+              <li>Кафедра Інформаційних управляючих систем</li>
+              <li>Кафедра Штучного інтелекту</li>
+              <li>Кафедра Системотехніки</li>
+            </ul>
+          </li>
+          <li>
+            Факультет АКТ
+            <ul>
+              <li>Кафедра комп’ютерно-інтегрованих технологій, автоматизації та робототехніки</li>
+              <li>Кафедра проектування та експлуатації електронних апаратів</li>
+              <li>Кафедра фізики</li>
+            </ul>
+          </li>
+        </ul>
 
-        </td>
-      </tr>
-    </table> 
+        <hr>
+
+        <h2 id="currency">Таблиця курсів валют</h2>
+        
+        <table width="90%" border="1" cellspacing="0" cellpadding="10">
+          <thead>
+            <tr bgcolor="#f4f4f4">
+              <th>Валюта</th>
+              <th>Купівля</th>
+              <th>Продаж</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Долар США (USD)</td>
+              <td>42.15</td>
+              <td>46.65</td>
+            </tr_>
+            <tr>
+              <td>Євро (EUR)</td>
+              <td>51.20</td>
+              <td>55.90</td>
+            </tr>
+            <tr>
+              <td>Фунт (GBP)</td>
+              <td>60.50</td>
+              <td>62.20</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </td>
+    </tr>
+
+  </table>
 
 </body>
 </html>
